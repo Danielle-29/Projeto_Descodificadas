@@ -1,0 +1,96 @@
+.nav {
+    text-align: right;
+    word-spacing: 10px;
+    font-size: 25px;
+    background-color: #3cb4c4;
+    padding: 40px;
+}
+
+a {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+
+.nav :hover {
+    box-shadow: 2px 2px #000000, 3px 3px #000000, 4px 4px #000000;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    border-radius: 5px;
+  }
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+    color: black;
+    text-align: center;
+}
+
+.galeria {
+    width: 55%;
+    height: 700px;
+    border: solid 2px;
+    overflow: hidden;
+    margin-left: 23%;
+}
+
+.galeria .album {
+    width: 500%;
+    height: 500%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.galeria .album .imagem {
+    width: 20%;
+    height: 20%;
+}
+
+@keyframes animacao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
+
+video {
+ margin-left: 1000px;
+}
+
+/*.imagem {
+    border: solid black 3px;
+    width: 95%;
+    height: 95%;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}*/
+
+footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3cb4c4;
+    font-family: 'Bebas Neue', cursive;
+ }
+
+footer .icones {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin-top: -40px;
+}
